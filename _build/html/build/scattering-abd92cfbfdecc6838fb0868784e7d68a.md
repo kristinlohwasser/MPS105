@@ -1,0 +1,246 @@
+# Part 1: Investigating the microscopic World
+
+## Resolving small structures
+
+### Examples
+
+
+
+:::{admonition} Example
+:class: tip
+<b>Example: Wavelength of a proton travelling with $v=0.01c$</b>
+
+$$
+\begin{align*}
+\lambda &= \frac{h}{p} \\
+&= \frac{h}{m\times v} \\
+&= \frac{6.625 \times 10^{-34}\, m^2 \, kg\, s^{-1}}{1.67 \times 10^{-27} kg \times 3 \times 10^6 \; m\, s^{-1}} = \frac{6.625 \times 10^{-34}\, m^{\cancel{2}}\, \cancel{kg}\, \cancel{s^{-1}}}{1.67 \times 10^{-27} \cancel{kg} \times 3 \times 10^6\, \cancel{m}\, \cancel{s^{-1}}} \\ \\
+&= 1.32 \times 10^{-8} m = 132 fm
+\end{align*}
+$$
+
+:::
+
+
+
+### The Geiger Marsden Experiment
+
+
+```{admonition} Calculation
+
+<b> Scattering angle in the Geiger Marsden Experiment</b>
+
+<img src="rutherfordscattering.png" alt="Vectors in Elastic scattering" width="300"/>
+
+Energy conservation:   $\,\,\,\,\,\,\,\,\,\, \frac{1}{2} m_\alpha {v^2_\alpha} = \frac{1}{2} m_\alpha {v'^2_\alpha} + \frac{1}{2} m_t {v'^2_t}$ <br>
+Momentum conservation: $\,\,\, m_\alpha \vec{v_\alpha} = m_\alpha \vec{v'_\alpha} + m_t \vec{v'_t}$ <br>
+
+Energy conservation:<br>
+\begin{align*}
+\frac{1}{2} m_\alpha {v^2_\alpha} &= \frac{1}{2} m_\alpha {v'^2_\alpha} + \frac{1}{2} m_t {v'^2_t} &\biggr\rvert \div\frac{1}{2} \\
+m_\alpha {v^2_\alpha} &=  m_\alpha {v'^2_\alpha} +  m'_t {v'^2_t}  &\biggr\rvert \; \textrm{multiply by  } m_\alpha \\
+m^2_\alpha {v^2_\alpha} &=  m^2_\alpha {v'^2_\alpha} +  m_\alpha m_t {v'^2_t} &
+\end{align*}
+
+
+Momentum conservation:<br>
+\begin{align*}
+m_\alpha \vec{v_\alpha} &= m_\alpha \vec{v'_\alpha} + m'_t \vec{v'_t} \; &\biggr\rvert \; \textrm{square both sides} \\
+m^2_\alpha {v^2_\alpha} &= m^2_\alpha {v'^2_\alpha} + m^2_t {v'^2_t} + 2 m_\alpha m_t \vec{v'_\alpha}\cdot \vec{v'_t} \\
+\end{align*}
+
+Now set (2) and (3) equal:
+\begin{align*}
+\cancel{m^2_\alpha {v'^2_\alpha}} +  m_\alpha m_t {v'^2_t} &= \cancel{m^2_\alpha {v'^2_\alpha}} + m^2_t {v'^2_t} + 2 m_\alpha m_t \vec{v'_\alpha}\cdot \vec{v'_t} \\
+m_\alpha m_t {v'^2_t} &= m^2_t {v'^2_t} + 2 m_\alpha m_t \vec{v'_\alpha}\cdot \vec{v'_t} \;\;\;\biggr\rvert \; - m^2_t {v'^2_t}, \div m_\alpha m_t  \\
+{v'^2_t} \left(1 - \frac{m_t}{m_\alpha} \right) &= 2 \vec{v'_\alpha}\cdot \vec{v'_t} \\
+{v'^2_t} \left(1 - \frac{m_t}{m_\alpha}\right) &= 2 {v'_\alpha}{v'_t} \cos\theta \\
+\end{align*}
+
+
+```
+
+
+
+
+$${v'^2_t} \left(1 - \frac{m_t}{m_\alpha}\right) = {v'_\alpha}{v'_t} \cos\theta $$
+
+
+
+
+```{admonition} Calculation
+
+<b>Resolution / Distance of closest approach in the Geiger Marsden Experiment</b>
+
+The potential energy of the alpha particle with charge $q_\alpha$ at a distance $r$ from the gold nuclei with charge $Q_{\textrm{AU}}$ is:
+
+$$
+U = E_\textrm{pot} = \frac{q_\alpha Q_{\textrm{AU}}}{4 \pi \epsilon_0 r}
+$$
+(see also PHY11006 lecture notes: \textit{5.5 The Potential and Potential Energy of a System of Charges})
+
+The $\alpha$ particles and the gold nuclei repell each other as they are both positively charged. In order to estimate how close they can get, we can compare the kinetic energy of the $\alpha$ particles to the potential energy caused by the charges. The kinetic energy is "used up" in order to overcome the repelling force of the electric field of the nuclei. Thus, the Kinetic energy (at t=0, i.e. when the particle approach from infinity) and potential energy are equal at the "distance of closest approach", the point at which the $\alpha$ particles are the closest to the gold nuclei, before they are deflected away from the nuclei.
+
+The kinetic energy of the $\alpha$ particles in the Geiger Marsden experiment is $E_\textrm{kin} = 5.30$ MeV. The charges of the $\alpha$ particles and the gold nuclei are $q_\alpha = 2$e and $Q_\textrm{AU}=79$e respectively.
+
+$$
+\begin{align*}
+E_\textrm{kin} &= E_\textrm{pot} \\
+E_\textrm{kin} &= \frac{q_\alpha Q_{\textrm{AU}}}{4 \pi \epsilon_0 r} \;  \;  \;  \;  \; \biggr\rvert \div  E_\textrm{kin} ; \times r     \\
+r &= \frac{q_\alpha Q_{\textrm{AU}}}{4 \pi \epsilon_0 E_\textrm{kin}}\\
+ &= \frac{2 \times 79 \times (1.602 \times 10^{-19})^2 C^2 }{5.30 \times 1.602 \times 10^{-19} x 10^6 J} \times 9\times 10^9 \frac{N m^2}{C^2}\\
+&= 4.3 \times 10^{-14} m \\ &= 43 fm
+\end{align*}
+$$
+
+The $\alpha$ particles do not come closer than 43 fm to the nucleus - the nucleus therefore is smaller than this! (Compare with the Bohr radius of 0.053 nm which is ~1000 larger)
+
+```
+
+
+### Units
+
+Particle physics uses a specific system of units which is designed to make calculations easier - This is in contrast to the system of units that is normally used within physics, the International System of Units (SI) which is metric and what you have been dealing with so far (and in future too).
+
+Energy is generally measured in electron-Volt (eV). An electron volt is defined as the amount of kinetic energy gained by a single electron after being accelerated from rest through an electric potential difference of 1 Volt in vacuum:
+
+$$ E_{\textrm{kin}} = q \times V $$
+
+where $E_{\textrm{kin}}$ is the kinetic energy of the electron, $q$ is its charge and $V$ is the voltage (or voltage difference) with which it is accelerated. CHECK FOR REFERENCE TO 1st YEAR COURSE!
+Given this definition, 1 eV $= 1.602 \times 10^{-19}$ J. So to convert from Joule into eV, one has to divide by $ 1.602 \times 10^{-19}$.
+
+:::{admonition} Example
+:class: tip
+<b>Example: Mass of the Proton</b>
+
+$$
+\begin{align*}
+m c^2 &= 1.67 \times 10^{-27} kg \times \left( 3 \times 10^8 m/s \right)^2 = 1.5 \times 10^{-9} J \\
+1.5 \times 10^{-9} J &= 1.5 \times 10^{-9} / 1.6 \times 10^{-19}\; \textrm{eV} = 939 \;\; \textrm{MeV}
+\end{align*}
+$$
+
+:::
+
+
+
+In the system of units used in particle physics, the speed of light is set to $c=1$ and also $\hbar = 1$. These are so-called 'natural units'. This allows to have the same units for energy, momentum and mass, which simplifies calculations as there is no factors of $c^2$ to numerically take into account.
+
+The barn is a unit of area which is used in cross-sections and integrated luminosity. One barn is equal to 10$^{-28}$ m$^2$ or 10$^{-24}$ cm$^2$. This is a larger area, common are cross-section smaller than mb or nb (millibarns and nanobarns).
+
+
+
+
+### Rutherford scattering
+
+
+
+
+
+
+```{admonition} Calculation
+
+<b> Rutherford scattering angle</b>
+
+From geometrical considerations (i.e. just defining the rate of particles scattered into a solid angle without assuming anything more on the geometry) we can see that that:
+
+```{math}
+:label: my_label
+\begin{align*}
+\frac{\Delta J}{J A} = n_G \Delta x \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} \Delta \Omega \label{diffxsec_general}
+\end{align*}
+```
+
+```{admonition}
+This is the general form of the differental cross-section.
+
+Let us now assume a parallel beam of incident particles $\alpha$ with particle flux density J (with J = dN/dt) that passes through a layer of particles B in rest with density $n_\textrm{G}$. All particles $\alpha$ that pass through an annular with radius $b$ and width d$b$ around an atom G are deflected by the angle $\theta \pm \textrm{d}\theta/2$. This assumes a sperically symmetric interaction potential: There is no prefered direction (along the ring with radius $b$). Per second, $ dJ = J dA = dN/dt dA = dN/dt 2\pi b db$ particles $\alpha$ pass through the annular ring (with A being the area). The fraction of all particles $\alpha$ (incident per unit area and per second onto the target) scattered through an interaction with **one single** particle G into the range of deflection angles $\theta \pm \textrm{d}\theta/2$ is therefore:
+
+\begin{align*}
+\frac{\mathrm{d} J (\theta \pm 1/2 \; \mathrm{d}\theta)}{J} = 2 \pi b \textrm{d}b = 2 \pi b \frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta
+\end{align*}
+
+If we place a detector with an area $A_D = R^2 \mathrm{d}\Omega = R^2 \sin\theta \mathrm{d}\theta\mathrm{d}\phi$ in a distance $R$ from the scattering centre G, then this detector receives a fraction of the particles scattered by this one particle G:
+
+\begin{align*}
+\frac{\mathrm{d} J (\theta, \phi)}{J} \frac{\textrm{d}\phi}{2\pi} = b \frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta \textrm{d} \phi
+\end{align*}
+
+The fraction of *all* incident particles $\alpha$, scattered by *all* atoms G with density $n_G$ in the volume $V$ = $A \Delta x$ is then:
+
+\begin{align*}
+\frac{\mathrm{d} J (\theta, \textrm{d}\Omega)}{J} &= n_G A \Delta x b \frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta \textrm{d} \phi 
+\end{align*}
+
+This is a specific cross-section (in terms of geometry) that takes into account the impact paramter $b$ and the scattering angle $\theta$. We can compared it to  {eq}`my_label` and find:
+
+\begin{align*}
+\frac{\mathrm{d} J}{J} &= n_G A \Delta x b \frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta \textrm{d} \phi \\
+&= n_G A \Delta x \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} \Delta \Omega
+\end{align*}
+
+Setting these two equal yields:
+\begin{align*}
+\cancel{n_G A \Delta x} b \frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta \textrm{d} \phi & = \cancel{n_G A \Delta x} \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} \Delta \Omega  &\biggr\rvert \; \textrm{using} \Delta \Omega = \sin \theta \mathrm{d}\theta \mathrm{d}\phi \\
+\frac{\textrm{d}b}{\textrm{d} \theta} \textrm{d} \theta \textrm{d} \phi & =  \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} \sin \theta \mathrm{d}\theta \mathrm{d}\phi 
+\end{align*}
+
+This gives a relationship between the differential cross-section and the impact parameter and scattering angle: 
+
+```{math}
+:label: my_label2
+\begin{align*}
+\boxed{\frac{\mathrm{d} \sigma}{\mathrm{d}\Omega} = b \frac{ \mathrm{d} b}{\mathrm{d} \theta} \frac{1}{\sin \theta}}
+\end{align*}
+```
+
+```{admonition}
+
+Measuring the relative fraction $\frac{\Delta J}{J}$ yields the differential cross section (see {eq}`my_label`) and with it the interaction potential as we have seen that the angle $\theta$ is defined as (see eq. (72) of the mechanics lecture notes):
+
+\begin{align*}
+\cot\frac{\theta}{2} = \frac{m v_0^2 b}{k} = \frac{m v_0^2 b}{1} \frac{4 \pi \epsilon_0}{qQ} 
+\end{align*}
+
+Note, that the mechanics lecture notes eq. (72) use $\phi$ - this is the same angle, just a different name. For scattering angles, especially in particle physics, the angle is $\theta$, so this is what we use here. We can re-arrage the equation to get the relationship for $b$:
+
+\begin{align*}
+\cot\frac{\theta}{2} &= \frac{m v_0^2 b}{1} \frac{4 \pi \epsilon_0}{qQ} \\
+b &= cot\frac{\theta}{2} \frac{qQ}{m v_0^2 4 \pi \epsilon_0}
+\end{align*}
+
+We from this last equation we can also get $\frac{\mathrm{d}b}{\mathrm{d}\theta}$ by taking the derivative:
+
+\begin{align*}
+\frac{\mathrm{d}b}{\mathrm{d}\theta} &= -\frac{1}{\sin^2(\theta/2)} \frac{qQ}{m v_0^2 4 \pi \epsilon_0}
+\end{align*}
+
+As $b$ cannot be measured, we eliminated it from from {eq}`my_label2` by inserting the above expression for $b$ and use $\sin(2\theta) = 2 \sin(\theta) \cos(\theta)$:
+\begin{align*}
+\frac{\mathrm{d} \sigma}{\mathrm{d}\Omega} &= b \frac{ \mathrm{d} b}{\mathrm{d} \theta} \frac{1}{\sin \theta} \\
+&= \frac{\cos\frac{\theta}{2}}{\sin\frac{\theta}{2}}  \frac{qQ}{m v_0^2 4 \pi \epsilon_0} \frac{1}{\sin^2(\theta/2)} \frac{qQ}{m v_0^2 4 \pi \epsilon_0}
+\end{align*}
+
+ (see {eq}`my_label`)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+There are two types of fundamental particles: Matter particles (so-called fermions) and force particles (bosons).
+
+#### Fermions: matter particles
+
+The matter particles can be divided again into two classes: leptons and quarks. Leptons are either charged (electron, muon or tau) or neutral (all neutrinos). Quarks have non-integer charge of +2/3 or -1/3.  Every matter particle has an anti-particle with the same mass but opposite charge. This means, there are 24 matter particles within the Standard Model. Fermions can be grouped into so-called generations with the particles in the larger generations having the same properties (such as charge) but a larger mass. For example, the electron, muons and taus have the same charge, interact with the same forces and the same coupling strength but whilst the electron mass is 0.511 MeV, the muon mass is 103 MeV and the tau has a mass of 1777 MeV. 
+
+*Table of Fermions*
+
