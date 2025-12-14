@@ -17,7 +17,13 @@ strongly interacting quarks and gluons are confined in hadrons. The full manyfol
 particles reveal themselves either in complicated dedicated experiments, or indirectly
 by their effect seen in astrophysical observations
 
-
+$$f(x)
+= f(a)
++ f'(a)(x-a)
++ \frac{f''(a)}{2!}(x-a)^2
++ \frac{f^{(3)}(a)}{3!}(x-a)^3
++ \cdots
+$$
 
 
 
@@ -97,49 +103,5 @@ Baryon number is defined as the total number of baryons minus the total number o
 
 
 
-
-
-
-
-### Units
-
-Particle physics uses a specific system of units which is designed to make calculations easier - This is in contrast to the system of units that is normally used within physics, the International System of Units (SI) which is metric and what you have been dealing with so far (and in future too).
-
-Energy is generally measured in electron-Volt (eV). An electron volt is defined as the amount of kinetic energy gained by a single electron after being accelerated from rest through an electric potential difference of 1 Volt in vacuum:
-
-$$ E_{\textrm{kin}} = q \times V $$
-
-where $E_{\textrm{kin}}$ is the kinetic energy of the electron, $q$ is its charge and $V$ is the voltage (or voltage difference) with which it is accelerated. CHECK FOR REFERENCE TO 1st YEAR COURSE!
-Given this definition, 1 eV $= 1.602 \times 10^{-19}$ J. So to convert from Joule into eV, one has to divide by $ 1.602 \times 10^{-19}$. 
-
-In the system of units used in particle physics, the speed of light is set to $c=1$ and also $\hbar = 1$. These are so-called 'natural units'. This allows to have the same units for energy, momentum and mass, which simplifies calculations as there is no factors of $c^2$ to numerically take into account. 
-
-The barn is a unit of area which is used in cross-sections and integrated luminosity. One barn is equal to 10$^{-28}$ m$^2$ or 10$^{-24}$ cm$^2$. This is a larger area, common are cross-section smaller than mb or nb (millibarns and nanobarns). 
-
-
-
-
-
-
-
-
-
-
-
-#### General properties of particles: mass, charge and spin
-
-The invariant mass is defined as:
-
-$m c^2 = \sqrt{E^2 - p^2c^2} = \sqrt{E^2 - p_x^2c^2 - p_y^2c^2 -p_z^2c^2}$
-
-
-#### Conservation Laws
-
-
-```{admonition} Calculation
-
-Consider two quarks at a distance of 1.0 fm which are are attracting each other with a force of magnitude 2.0 $\times$ 10$^4$ N. What is the magnitude of the force at a distance of 9.0 fm?
-
-As the force is proprotional to $r$, the magnitude of the force at 9.0 fm is 9 $\times$ the force at 1.0 fm, thus 18.0 $\times$ 10$^4$ N.
 
 
