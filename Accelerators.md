@@ -54,9 +54,10 @@ Two types of colliders: A lineary collider at SLAC, Berkeley and the LHC's prede
 
 However, keeping the particles on that beneficial circular path comes with its own challenges but these can be solved using a fundamental physical principle: The Lorentz-Force 
 
-```{admonition} Calculation
+:::{admonition} Equation
+:class: Warning
 
-Charged particle in a magnetic field
+<b>Charged particle in a magnetic field</b>
 
 A charge particle in a magnetic field is subject to the Lorentz-Force:
 
@@ -76,7 +77,7 @@ We can solve for the radius of the curvature which is expressed as function of t
 $$R = \frac{m v}{q B} $$
 
 Note: This is a "classical" treatment as we are using velocity $v$. Provided $p = mv$ is used this is correct also when $v$ approaches the speed of light, i.e. when you would normally need to use special relativity.
-```
+:::
 
 The Large Hadron Collider (LHC) is currently the highest energy collider on earth. It accelerates two beams of protons to an energy of E=7 TeV and colliders them in four interaction points. The LHC has a circumference of 27 km. The protons are keep on the circular path by dipole magnets. There are two beam pipes for the protons - one for those travelling clockwise, the other for those travelling counter-clockwise. However these beam pipes are kept in the same housing and also use the same dipole magnet which is constructed to deliver the right magnetic field in the right place to keep both circulating beams of protons in the right place. A dipole magnet is the simplest type of magnet. It has two poles, one north and one south. The dipole magnets used in particles accelerators are electromagnets with a homogenous magnetic field across the path of the particles.
 

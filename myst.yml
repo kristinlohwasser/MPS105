@@ -13,9 +13,10 @@ project:
     - file: intro.md
     - file: scattering.md    
     - file: Accelerators.md
-    #- file: SM.md
-    #- file: BeyondSM.md
-    
+    - file: SM.md
+    - file: BeyondSM.md
+    - file: TheFrontier.md
+
 site:
   template: book-theme
   options:

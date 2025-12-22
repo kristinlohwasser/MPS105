@@ -230,7 +230,6 @@ $$\frac{\Delta J}{J A} = n_b \Delta x \frac{ d \sigma}{d \Omega} \Delta \Omega$$
 
 with $J$ as the flux, A the area of the detector, $n_b \Delta x$ the number of target particles, $\frac{ d \sigma}{d \Omega}$ the differential cross-section which depends on the interaction potential between the scattering particles A and B. $\frac{\Delta J}{J A}$ is the fraction of incident particles that is scattered into the solid angle $\Delta \Omega$ accepted by the detector.
 
-
 ## The interpretation of the Geiger-Marsden experiment by Rutherford
 
 As seen above, the mass of the nucleus is much larger than the mass of the $\alpha$ particles. So when Rutherford looked into deriving a formula to describe the scattering occuring the Geiger-Marsden experiment, he assumed, there is no energy loss in the collision, that is he ignores the recoil of the target atom. It also seems, that the electrons have no impact on the scattering as the size of the nucleus, the scattering centre is so much smaller than that of the atoms. Under these conditions, the $\alpha$ particle and nucleus interact through a central force, a physical problem studied already by Isaac Newton and that you have covered in {cite}`Y1Mech`. This problem considers a central force that only acts along a line between the particles and where the force varies with the inverse square, like Coulomb force in this case.
@@ -363,6 +362,7 @@ $E^\textrm{initial}_\textrm{kin} = E^\textrm{final}_\textrm{kin} + E_\textrm{int
 
 where $E_\textrm{internal}$ describes the energy transformed into heat or the production of another particle. If looking at scattering of particles, you will then see a number of peaks that correspond to different values of $E^\textrm{initial}_\textrm{kin} - E_\textrm{internal}$. The internal energy is expanded for exciting the nuclei or to produce new particles.
 
+(sec_scattering)=
 ## Scattering on nucleons
 
 The scattering experiments did not stop with Rutherford scattering: For very large angles (corresponding to small impact parameters where the electrons are very close to the centre of the atom and thus the nucleus) again deviations from the Rutherford formula were observed.
